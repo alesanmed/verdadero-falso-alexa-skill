@@ -71,8 +71,16 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
     """Single handler for Cancel and Stop Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return (is_intent_name("AMAZON.CancelIntent")(handler_input) or
-                is_intent_name("AMAZON.StopIntent")(handler_input))
+        attr = handler_input.attributes_manager.session_attributes
+
+        is_cancel_or_stop_intent = (is_intent_name("AMAZON.CancelIntent")(handler_input) or 
+                                    is_intent_name("AMAZON.StopIntent")(handler_input))
+        
+        user_doesnt_want_another_question = (attr['state'] == 'ANSWERED' and 
+                                            is_intent_name("AMAZON.NoIntent")(handler_input))
+        
+        return is_cancel_or_stop_intent or user_doesnt_want_another_question
+                
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
