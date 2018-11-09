@@ -36,16 +36,24 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return handler_input.response_builder.response
 
 
-class GetNewEventIntentHandler(AbstractRequestHandler):
-    """Handler for Get New Event Intent."""
+class GetNewQuestionIntentHandler(AbstractRequestHandler):
+    """Handler for Get New Question Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return is_intent_name("GetNewEventIntent")(handler_input)
+        attr = handler_input.attributes_manager.session_attributes
+        return (is_intent_name("GetNewQuestionIntent")(handler_input) and 
+                attr['state'] == STATES['QUESTION_ANSWERED'])
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
+        attr = handler_input.attributes_manager.session_attributes
+        attr['state'] == STATES['QUESTION_ASKED']
 
-        handler_input.response_builder.speak(db_functions.retrieve_random_event(handler_input))
+        question_obj = db_functions.retrieve_random_question(handler_input)
+
+        speech_text = '{}, ¿Verdadero o Falso?'.format(question_obj['question'])
+
+        handler_input.response_builder.speak()
 
         return handler_input.response_builder.response
 
