@@ -104,10 +104,7 @@ class FallbackIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "No puedo ayudarte con eso..."
-        reprompt = "Prueba a decir cuentame algo interesante"
-        handler_input.response_builder.speak(speech_text).ask(reprompt)
-        return handler_input.response_builder.response
+        pass
 
 
 class SessionEndedRequestHandler(AbstractRequestHandler):
