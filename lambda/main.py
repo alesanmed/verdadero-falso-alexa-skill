@@ -11,7 +11,9 @@ from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_model import Response
 
 from db import db_functions
+from utils import get_locale_texts, STATES
 
+import importlib
 import datetime
 
 sb = SkillBuilder()
@@ -27,8 +29,9 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
+        texts = get_locale_texts(handler_input)
         
-        handler_input.response_builder.speak(db_functions.retrieve_random_event(handler_input))
+        handler_input.response_builder.speak(texts.HELLO_TEXT)
         
         return handler_input.response_builder.response
 
@@ -55,7 +58,9 @@ class HelpIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "Prueba a decir cuentame algo interesante"
+        texts = get_locale_texts(handler_input)
+
+        speech_text = texts.HELP_TEXT
 
         handler_input.response_builder.ask(
             speech_text)
@@ -71,7 +76,9 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speech_text = "Hasta la próxima!"
+        texts = get_locale_texts(handler_input)
+
+        speech_text = texts.EXIT_TEXT
 
         handler_input.response_builder.speak(speech_text)
         
@@ -118,8 +125,9 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         # type: (HandlerInput, Exception) -> Response
         logger.error(exception, exc_info=True)
 
-        speech = "Parece que algo ha fallado, prueba a decir cuentame algo interesante"
-        handler_input.response_builder.ask(speech)
+        texts = get_locale_texts(handler_input)
+
+        handler_input.response_builder.ask(texts.EXCEPTION_TEXT)
 
         return handler_input.response_builder.response
 
