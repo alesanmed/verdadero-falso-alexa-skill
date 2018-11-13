@@ -18,6 +18,18 @@ def retrieve_random_question(handler_input):
 
     return random_question
 
+def get_question(question_id):
+    client = db_utils.connect()
+    db = client[skill_config.DB_NAME]
+
+    question = db.questions.find_one({
+        '_id': question_id
+    })
+
+    db_utils.close(client)
+
+    return question
+
 def __get_question_for_user(user_id):
     question = None
 
