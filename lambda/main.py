@@ -3,6 +3,7 @@
 import logging
 
 from ask_sdk_core.skill_builder import SkillBuilder
+from ask_sdk_core.dispatch_components import AbstractRequestInterceptor
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.dispatch_components import AbstractExceptionHandler
 from ask_sdk_core.utils import is_request_type, is_intent_name
@@ -223,6 +224,15 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
         return handler_input.response_builder.response
 
+class LoggingRequestInterceptor(AbstractRequestInterceptor):
+    def process(self, handler_input):
+        logger = logging.getLogger()
+
+        attr = handler_input.attributes_manager.session_attributes
+        
+        logger.info('Intent received: {}'.format(handler_input.request_envelope.request.intent.name))
+        logger.info('User state: {}'.format(attr['state']))
+
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(GetNewQuestionIntentHandler())
 sb.add_request_handler(QuestionAnswerIntentHandler())
@@ -234,5 +244,7 @@ sb.add_request_handler(FallbackIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 
 sb.add_exception_handler(CatchAllExceptionHandler())
+
+sb.add_global_request_interceptor(LoggingRequestInterceptor())
 
 handler = sb.lambda_handler()
