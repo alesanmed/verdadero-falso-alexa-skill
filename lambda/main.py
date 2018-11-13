@@ -11,7 +11,7 @@ from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_model import Response
 
 from db import db_functions
-from utils import get_locale_texts, STATES
+from utils import get_locale_texts, STATES, check_correct_answer, new_question_process
 
 import importlib
 import datetime
@@ -41,22 +41,100 @@ class GetNewQuestionIntentHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
         attr = handler_input.attributes_manager.session_attributes
-        return (is_intent_name("GetNewQuestionIntent")(handler_input) and 
-                attr['state'] == STATES['QUESTION_ANSWERED'])
+
+        user_wants_another_question = (
+            attr['state'] == STATES['QUESTION_ANSWERED'] and
+            is_intent_name("AMAZON.YesIntent")
+        )
+
+        return (is_intent_name("GetNewQuestionIntent")(handler_input) or 
+                user_wants_another_question)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        attr = handler_input.attributes_manager.session_attributes
-        attr['state'] == STATES['QUESTION_ASKED']
+        texts = get_locale_texts(handler_input)
 
-        question_obj = db_functions.retrieve_random_question(handler_input)
+        speech_text = '{}, {}'.format(new_question_process(handler_input, texts), texts.TRUE_FALSE_TEXT)
 
-        speech_text = '{}, ¿Verdadero o Falso?'.format(question_obj['question'])
-
-        handler_input.response_builder.speak()
+        handler_input.response_builder.speak(speech_text)
 
         return handler_input.response_builder.response
 
+class QuestionAnswerIntentHandler(AbstractRequestHandler):
+    """Handler for Answer Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("QuestionAnswerIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        texts = get_locale_texts(handler_input)
+        
+        attr = handler_input.attributes_manager.session_attributes
+        attr['state'] = STATES['QUESTION_ASWERED']
+
+        question_obj = db_functions.get_question(attr['question_id'])
+
+        user_answer = handler_input.request_envelope['intent']['slots']['response']['value']
+
+        speech_text = ''
+        
+        if check_correct_answer(question_obj, user_answer):
+            speech_text += texts.CORRECT_ANSWER_TEXT
+        else:
+            speech_text += texts.INCORRECT_ANSWER_TEXT
+
+        speech_text += question_obj['more_info']
+
+        handler_input.response_builder.speak(
+            speech_text)
+
+        handler_input.response_builder.speak(texts.NEW_ANSWER_TEXT)
+
+        return handler_input.response_builder.response
+
+class RepeatIntentHandler(AbstractRequestHandler):
+    """Handler for Repeat Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("AMAZON.RepeatIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        texts = get_locale_texts(handler_input)
+        
+        attr = handler_input.attributes_manager.session_attributes
+
+        question_obj = db_functions.get_question(attr['question_id'])
+
+        speech_text = None
+
+        if attr['state'] == STATES['QUESTION_ASKED']:
+            speech_text = '{}, {}'.format(question_obj['question'], texts.TRUE_FALSE_TEXT)
+        elif attr['state'] == STATES['QUESTION_ANSWERED']:
+            speech_text = '{}, {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
+
+        handler_input.response_builder.speak(
+            speech_text)
+
+        return handler_input.response_builder.response
+
+class StartOverIntentHandler(AbstractRequestHandler):
+    """Handler for Start Over Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return is_intent_name("AMAZON.StartOverIntent")(handler_input)
+
+    def handle(self, handler_input):
+        texts = get_locale_texts(handler_input)
+
+        speech_text = '{} {}, {}'.format(texts.START_OVER_TEXT,
+                                        new_question_process(handler_input, texts),
+                                        texts.TRUE_FALSE_TEXT)
+
+        handler_input.response_builder.speak(speech_text)
+
+        return handler_input.response_builder.response
 
 class HelpIntentHandler(AbstractRequestHandler):
     """Handler for Help Intent."""
@@ -70,8 +148,9 @@ class HelpIntentHandler(AbstractRequestHandler):
 
         speech_text = texts.HELP_TEXT
 
-        handler_input.response_builder.ask(
+        handler_input.response_builder.speak(
             speech_text)
+
         return handler_input.response_builder.response
 
 
@@ -140,12 +219,12 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
         texts = get_locale_texts(handler_input)
 
-        handler_input.response_builder.ask(texts.EXCEPTION_TEXT)
+        handler_input.response_builder.speak(texts.EXCEPTION_TEXT)
 
         return handler_input.response_builder.response
 
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(GetNewEventIntentHandler())
+sb.add_request_handler(GetNewQuestionIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
