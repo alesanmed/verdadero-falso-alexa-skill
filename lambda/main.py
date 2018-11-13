@@ -139,9 +139,10 @@ class RepeatIntentHandler(AbstractRequestHandler):
                 speech_text).ask(texts.TRUE_FALSE_TEXT)
         elif attr['state'] == utils.STATES['QUESTION_ANSWERED']:
             speech_text = '{}, {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
-
-        handler_input.response_builder.speak(
-            speech_text)
+            handler_input.response_builder.speak(
+                speech_text).ask(texts.NEW_ANSWER_TEXT)
+        elif attr['state'] == utils.STATES['INITIALIZED']:
+            handler_input.response_builder.speak(texts.HELLO_TEXT).ask(texts.HELLO_REPROMPT_TEXT)
 
         return handler_input.response_builder.response
 
