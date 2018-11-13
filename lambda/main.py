@@ -205,7 +205,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
 
         speech_text = texts.EXIT_TEXT
 
-        handler_input.response_builder.speak(speech_text)
+        handler_input.response_builder.speak(speech_text).set_should_end_session(True)
         
         return handler_input.response_builder.response
 
