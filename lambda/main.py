@@ -101,6 +101,9 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
         slots = handler_input.request_envelope.request.intent.slots
         
         user_answer = utils.parse_boolean_slot(slots.get("response").value)
+
+        logger.info('QuestionAnswerIntentHandler user answer: {}'.format(user_answer))
+
         speech_text = ''
         
         if utils.check_correct_answer(question_obj, user_answer):
@@ -180,7 +183,10 @@ class HelpIntentHandler(AbstractRequestHandler):
 class CancelOrStopIntentHandler(AbstractRequestHandler):
     """Single handler for Cancel and Stop Intent."""
     def can_handle(self, handler_input):
-        # type: (HandlerInput) -> bool
+        # type: (HandlerInput) -> bool        
+        logger = logging.getLogger()
+        logger.setLevel(logging.INFO)
+
         attr = handler_input.attributes_manager.session_attributes
 
         is_cancel_or_stop_intent = (is_intent_name("AMAZON.CancelIntent")(handler_input) or 
@@ -225,6 +231,11 @@ class SessionEndedRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
+        logger = logging.getLogger()
+        logger.setLevel(logging.INFO)
+
+        logger.info('SessionEndedRequestHandler: Session end requested. handler_input:\n{}'.format(
+            handler_input.request_envelope.request))
         return handler_input.response_builder.response
 
 
@@ -249,8 +260,17 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 class LoggingRequestInterceptor(AbstractRequestInterceptor):
     def process(self, handler_input):
         logger = logging.getLogger()
+        logger.setLevel(logging.INFO)
 
         attr = handler_input.attributes_manager.session_attributes
+        intent_received = 'Unknown'
+
+        logger.info('Request: {}'.format(handler_input.request_envelope))
+
+        if handler_input.request_envelope.request.object_type == 'IntentRequest':
+            intent_received = handler_input.request_envelope.request.intent.name
+        else:
+            intent_received = handler_input.request_envelope.request.object_type
 
         logger.info('Intent received: {}'.format(intent_received))
         logger.info('User state: {}'.format(attr.get('state', None)))
