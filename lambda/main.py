@@ -225,6 +225,9 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(GetNewQuestionIntentHandler())
+sb.add_request_handler(QuestionAnswerIntentHandler())
+sb.add_request_handler(RepeatIntentHandler())
+sb.add_request_handler(StartOverIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
