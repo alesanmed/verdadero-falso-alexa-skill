@@ -6,7 +6,7 @@ from os.path import dirname as dir
 path.append(dir(path[0]))
 
 from pymongo import MongoClient
-import db_utils
+from bson import ObjectId
 from configurations import skill_config
 
 def retrieve_random_question(handler_input):
@@ -23,7 +23,7 @@ def get_question(question_id):
     db = client[skill_config.DB_NAME]
 
     question = db.questions.find_one({
-        '_id': question_id
+        '_id': ObjectId(question_id)
     })
 
     db_utils.close(client)
