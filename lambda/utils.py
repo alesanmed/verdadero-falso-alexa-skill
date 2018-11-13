@@ -7,6 +7,12 @@ STATES = {
   'QUESTION_ANSWERED': 2
 }
 
+def initialize_attr(attr):
+  if not attr.get('state', False):
+    attr['state'] = STATES['INITIALIZED']
+  
+  return attr
+
 def new_question_process(handler_input, texts):
   attr = handler_input.attributes_manager.session_attributes
   attr['state'] = STATES['QUESTION_ASKED']
