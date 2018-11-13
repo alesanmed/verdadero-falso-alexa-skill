@@ -12,7 +12,7 @@ from configurations import skill_config
 def retrieve_random_question(handler_input):
     req_envelope = handler_input.request_envelope
 
-    user_id = req_envelope.context.System.user.userId
+    user_id = req_envelope.context.system.user.user_id
 
     random_question = __get_question_for_user(user_id)['question']
 
