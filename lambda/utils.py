@@ -7,6 +7,9 @@ STATES = {
   'QUESTION_ANSWERED': 2
 }
 
+def parse_boolean_slot(slot_value):
+  return slot_value == 'verdadero'
+
 def initialize_attr(attr):
   if not attr.get('state', False):
     attr['state'] = STATES['INITIALIZED']
