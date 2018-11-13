@@ -14,7 +14,7 @@ def retrieve_random_question(handler_input):
 
     user_id = req_envelope.context.system.user.user_id
 
-    random_question = __get_question_for_user(user_id)['question']
+    random_question = __get_question_for_user(user_id)
 
     return random_question
 
