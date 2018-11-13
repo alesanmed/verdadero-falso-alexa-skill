@@ -32,7 +32,13 @@ class LaunchRequestHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         texts = utils.get_locale_texts(handler_input)
         
-        handler_input.response_builder.speak(texts.HELLO_TEXT)
+        attr = handler_input.attributes_manager.session_attributes
+
+        attr['state'] = utils.STATES['INITIALIZED']
+
+        handler_input.attributes_manager.session_attributes = attr
+        
+        handler_input.response_builder.speak(texts.HELLO_TEXT).ask(texts.HELLO_REPROMPT_TEXT)
         
         return handler_input.response_builder.response
 
