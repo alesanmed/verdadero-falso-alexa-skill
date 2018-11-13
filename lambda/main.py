@@ -67,7 +67,7 @@ class GetNewQuestionIntentHandler(AbstractRequestHandler):
 
         speech_text = utils.new_question_process(handler_input, texts)
 
-        handler_input.response_builder.speak(speech_text)
+        handler_input.response_builder.speak(speech_text).ask(speech_text)
 
         return handler_input.response_builder.response
 
@@ -94,6 +94,8 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
         attr = handler_input.attributes_manager.session_attributes
         attr['state'] = utils.STATES['QUESTION_ANSWERED']
 
+        handler_input.attributes_manager.session_attributes = attr
+
         question_obj = db_functions.get_question(attr['question_id'])
 
         slots = handler_input.request_envelope.request.intent.slots
@@ -106,12 +108,9 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
         else:
             speech_text += texts.INCORRECT_ANSWER_TEXT
 
-        speech_text += question_obj['more_info']
+        speech_text += '{}. {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
 
-        handler_input.response_builder.speak(
-            speech_text)
-
-        handler_input.response_builder.speak(texts.NEW_ANSWER_TEXT)
+        handler_input.response_builder.speak(speech_text).ask(texts.NEW_ANSWER_TEXT)
 
         return handler_input.response_builder.response
 
@@ -156,7 +155,7 @@ class StartOverIntentHandler(AbstractRequestHandler):
                                         utils.new_question_process(handler_input, texts),
                                         texts.TRUE_FALSE_TEXT)
 
-        handler_input.response_builder.speak(speech_text)
+        handler_input.response_builder.speak(speech_text).ask(texts.TRUE_FALSE_TEXT)
 
         return handler_input.response_builder.response
 
