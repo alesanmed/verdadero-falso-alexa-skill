@@ -22,7 +22,9 @@ def new_question_process(handler_input, texts):
 
   question_obj = db_functions.retrieve_random_question(handler_input)
 
-  attr['question_id'] == question_obj['_id']
+  attr['question_id'] = str(question_obj['_id'])
+
+  handler_input.attributes_manager.session_attributes = attr
 
   speech_text = '{}, {}'.format(question_obj['question'], texts.TRUE_FALSE_TEXT)
 
