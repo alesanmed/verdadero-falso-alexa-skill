@@ -31,7 +31,9 @@ def new_question_process(handler_input, texts):
   return speech_text
 
 def check_correct_answer(question_obj, user_answer):
-  return bool(question_obj['correct_answer']) == bool(user_answer)
+  question_answer = question_obj['correct_answer'] == 'True'
+  
+  return question_answer == user_answer
 
 def get_locale_texts(handler_input):
   return importlib.import_module('texts.{}'.format(
