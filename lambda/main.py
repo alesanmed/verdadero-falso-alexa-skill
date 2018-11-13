@@ -51,9 +51,11 @@ class GetNewQuestionIntentHandler(AbstractRequestHandler):
 
         attr = utils.initialize_attr(attr)
 
+        handler_input.attributes_manager.session_attributes = attr
+
         user_wants_another_question = (
             attr['state'] == utils.STATES['QUESTION_ANSWERED'] and
-            is_intent_name("AMAZON.YesIntent")
+            is_intent_name("AMAZON.YesIntent")(handler_input)
         )
 
         return (is_intent_name("GetNewQuestionIntent")(handler_input) or 
@@ -188,7 +190,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
         user_doesnt_want_another_question = (attr['state'] == utils.STATES['QUESTION_ANSWERED'] and 
                                             is_intent_name("AMAZON.NoIntent")(handler_input))
         
-        return is_cancel_or_stop_intent or user_doesnt_want_another_question
+        return user_doesnt_want_another_question or is_cancel_or_stop_intent
                 
 
     def handle(self, handler_input):
@@ -250,9 +252,9 @@ class LoggingRequestInterceptor(AbstractRequestInterceptor):
         logger = logging.getLogger()
 
         attr = handler_input.attributes_manager.session_attributes
-        
-        logger.info('Intent received: {}'.format(handler_input.request_envelope.request.intent.name))
-        logger.info('User state: {}'.format(attr['state']))
+
+        logger.info('Intent received: {}'.format(intent_received))
+        logger.info('User state: {}'.format(attr.get('state', None)))
 
 sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(GetNewQuestionIntentHandler())
