@@ -2,8 +2,9 @@ import importlib
 from db import db_functions
 
 STATES = {
-  'QUESTION_ASKED': 0,
-  'QUESTION_ANSWERED': 1
+  'INITIALIZED': 0,
+  'QUESTION_ASKED': 1,
+  'QUESTION_ANSWERED': 2
 }
 
 def new_question_process(handler_input, texts):
