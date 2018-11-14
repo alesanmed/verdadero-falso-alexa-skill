@@ -1,0 +1,257 @@
+[
+  {
+    "category": {
+      "father": "Geografía"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Un grupo de islas es un archipiélao",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Además de ser un conjunto de islas próximas entre sí, generalmente tienen un origen geológico común."
+  },
+  {
+    "category": {
+      "father": "Cultura general"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La web de vídeos YouTube fue comprada por Facebook por 1600 millones de dólares",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Fue Google la que, en 2006 compró YouTube por 1600 millones de dólares"
+  },
+  {
+    "category": {
+      "father": "Ciencia y Tecnología",
+      "child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "Un desfibrilador puede hacer que un corazón que ha dejado de latir vuelva a hacerlo",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+		"more_info": "El desfibrilador permite corregir algunos tipos de arritmia que pueden causar una parada, pero ante un corazón parado el desfibrilador no sirve"
+  },
+  {
+    "category": {
+      "father": "Ocio",
+			"child": "Literatura"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El libro titulado 1984 se publicó en 1949.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "Fue escrita por George Orwell y es una novela de ficción distópica."
+  },
+  {
+    "category": {
+      "father": "Ciencia y Tecnología",
+			"child": "Matemáticas"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El problema de la cuadratura del círculo tiene solución",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+		"more_info": "Este problema busca encontrar, usando solo una regla y un compás, un cuadrado con un área igual a un círculo dado. No tiene solución."
+  },
+  {
+    "category": {
+      "father": "Geografía"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "Gotemburgo es la capital de Suecia",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+		"more_info": "La capital de Suecia es Estocolmo"
+  },
+  {
+    "category": {
+      "father": "Ciencia y Tecnología",
+			"child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Todos los átomos tienen un núcleo",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "El núcleo está formado de protones y neutrones"
+  },
+  {
+    "category": {
+      "father": "Cultura general"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "Besar a una persona durante un minuto quema aproximadamente dos calorías",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "Hay afirmaciones acerca de que se queman entre 1,5 y 2 calorías por minuto mientras se besa a una persona"
+  },
+  {
+    "category": {
+      "father": "Ocio",
+			"child": "Cine"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Samuel L. Jackson tenía grabado 'Maldito Hijo de Perra' en su sable láser durante el rodaje de La Guerra de las Galaxias",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "En alguna entrevista ha dicho que tenía el acrónimo de esa frase en inglés (BMF) grabado en el interruptor de su sable"
+  },
+  {
+    "category": {
+      "father": "Geografía"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "En Europa no hay ningún desierto",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+		"more_info": "En Europa hay varios desiertos, por ejemplo el de Accona en Italia o el de Monegros o Tabernas en España."
+  },
+  {
+    "category": {
+      "father": "Geografía"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La Antártida es el desierto más grande del mundo.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "Los polares son los desiertos más grandes del mundo. El de la Antártida con más de 14 millones de kilómetros cuadrados. Sin contar los polares, el más grande es el del Sáhara"
+  },
+  {
+    "category": {
+      "father": "Cultura general"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El romaní (idioma rumano) es una lengua romance, al igual que el francés, el español o el italiano. ",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "El idioma rumano proviene de una rama indoeuropea de lenguas que evolucionaron del latín popular, como el resto de lenguas romances."
+  },
+  {
+    "category": {
+      "father": "Historia"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "MArtein Luther King hijo and Anna Frank nacieron el mismo año",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "Anna Frank el 12 de junio y MArtein Luther King hijo el 15 de enero, pero ambos en el 1929."
+  },
+  {
+    "category": {
+      "father": "Ocio",
+			"child": "Literatura"
+    },
+    "type": "boolean",
+    "difficulty": "dificil",
+    "question": "Harry Potter nació el 31 de julio de 1980",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "Haciendo algunos cálculos con afirmaciones del primer libro se puede llegar a que esa es su fecha de nacimiento."
+  },
+  {
+    "category": {
+      "father": "Ciencia y Tecnología",
+			"child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "dificil",
+    "question": "El elemento Litio se llama así por Lituania",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+		"more_info": "Aparentemente se llama así popr la palabra lithos que en griego significa piedra. Esto se deba probablemente a que el elemento fue descubierto a pArteir de una fuente mineral"
+  },
+  {
+    "category": {
+      "father": "Famosos"
+    },
+    "type": "boolean",
+    "difficulty": "dificil",
+    "question": "El nombre real de Lady Gaga es Stefani Joanne Angelina Germanotta.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "Además nació en marzo de 1986 en Nueva York"
+  },
+  {
+    "category": {
+      "father": "Arte"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Leonardo da Vinci no fue el pintor de la Mona Lisa.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+		"more_info": "Además fue pintado por Leonardo entre el 1503 y el 1519"
+  },
+  {
+    "category": {
+      "father": "Geografía"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Nueva Escocia está en la costa este de Canadá",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+		"more_info": "Fue Carlos Quinto de Escocia y Primero de Inglaterra el que en 1620 mandó una tropa de escoceses para fundar allí una colonia con el nombre Nueva Escocia"
+  },
+  {
+    "category": {
+      "father": "Ciencia y Tecnología",
+      "child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "Los monos son humanos menos evolucionados",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+		"more_info": "Los monos están tan evolucionados como los humanos, la diferencia es que del antepasado común de monos y humanos surgieron líneas evolutivas separadas que dieron lugar a especies diferentes"
+  }
+]

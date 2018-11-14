@@ -1,0 +1,139 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "verdadero o falso",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancelar"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "qué puedo hacer",
+                        "que puedo hacer",
+                        "ayudame",
+                        "ayuda"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop",
+                        "terminar",
+                        "fin",
+                        "para"
+                    ]
+                },
+                {
+                    "name": "GetNewQuestionIntent",
+                    "slots": [],
+                    "samples": [
+                        "lánzame algunas preguntas",
+                        "lanzame algunas preguntas",
+                        "lánzame unas preguntas",
+                        "lanzame unas preguntas",
+                        "lánzame alguna pregunta",
+                        "lanzame alguna pregunta",
+                        "lánzame una pregunta",
+                        "lanzame una pregunta",
+                        "lánzame preguntas",
+                        "lanzame preguntas",
+                        "hazme preguntas",
+                        "empieza con las preguntas",
+                        "empieza a hacerme preguntas",
+                        "hazme algunas preguntas",
+                        "hazme unas preguntas",
+                        "hazme alguna pregunta",
+                        "hazme una pregunta",
+                        "dime algunas preguntas",
+                        "dime unas preguntas",
+                        "dime alguna pregunta",
+                        "dime una pregunta"
+                    ]
+                },
+                {
+                    "name": "QuestionAnswerIntent",
+                    "slots": [
+                        {
+                            "name": "response",
+                            "type": "BOOLEAN"
+                        }
+                    ],
+                    "samples": [
+                        "eso es {response}",
+                        "es {response}",
+                        "{response}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "que",
+                        "como",
+                        "repitelo",
+                        "puedes repetirlo",
+                        "puedes repetir",
+                        "dilo otra vez",
+                        "repite"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "sí",
+                        "si"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "no"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": [
+                        "vuelve al principio",
+                        "reinicia",
+                        "reiniciate",
+                        "empieza otra vez",
+                        "vuelve a empezar",
+                        "empieza de nuevo"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "BOOLEAN",
+                    "values": [
+                        {
+                            "id": "False",
+                            "name": {
+                                "value": "falso",
+                                "synonyms": [
+                                    "mentira",
+                                    "falso",
+                                    "incorrecto"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "True",
+                            "name": {
+                                "value": "verdadero",
+                                "synonyms": [
+                                    "verdad",
+                                    "cierto",
+                                    "correcto"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
