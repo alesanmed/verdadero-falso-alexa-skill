@@ -26,7 +26,7 @@ def new_question_process(handler_input, texts):
 
   handler_input.attributes_manager.session_attributes = attr
 
-  speech_text = '{}, {}'.format(question_obj['question'], texts.TRUE_FALSE_TEXT)
+  speech_text = '{}. {}'.format(question_obj['question'], texts.TRUE_FALSE_TEXT)
 
   return speech_text
 
