@@ -9,6 +9,8 @@ from ask_sdk_core.dispatch_components import AbstractExceptionHandler
 from ask_sdk_core.utils import is_request_type, is_intent_name
 from ask_sdk_core.handler_input import HandlerInput
 
+from ask_sdk_model.ui import SimpleCard
+
 from ask_sdk_model import Response
 
 from db import db_functions
@@ -38,7 +40,11 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
         handler_input.attributes_manager.session_attributes = attr
         
-        handler_input.response_builder.speak(texts.HELLO_TEXT).ask(texts.HELLO_REPROMPT_TEXT)
+        (handler_input
+                    .response_builder
+                    .speak(texts.HELLO_TEXT)
+                    .set_card(SimpleCard(texts.SKILL_NAME, texts.HELLO_TEXT))
+                    .ask(texts.HELLO_REPROMPT_TEXT))
         
         return handler_input.response_builder.response
 
@@ -67,7 +73,10 @@ class GetNewQuestionIntentHandler(AbstractRequestHandler):
 
         speech_text = utils.new_question_process(handler_input, texts)
 
-        handler_input.response_builder.speak(speech_text).ask(speech_text)
+        (handler_input.response_builder
+            .speak(speech_text)
+            .set_card(SimpleCard(texts.SKILL_NAME, speech_text))
+            .ask(speech_text))
 
         return handler_input.response_builder.response
 
@@ -113,7 +122,10 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
 
         speech_text += '{}. {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
 
-        handler_input.response_builder.speak(speech_text).ask(texts.NEW_ANSWER_TEXT)
+        (handler_input.response_builder
+                .speak(speech_text)
+                .set_card(SimpleCard(texts.SKILL_NAME, speech_text))
+                .ask(texts.NEW_ANSWER_TEXT))
 
         return handler_input.response_builder.response
 
@@ -135,14 +147,21 @@ class RepeatIntentHandler(AbstractRequestHandler):
 
         if attr['state'] == utils.STATES['QUESTION_ASKED']:
             speech_text = '{}, {}'.format(question_obj['question'], texts.TRUE_FALSE_TEXT)
-            handler_input.response_builder.speak(
-                speech_text).ask(texts.TRUE_FALSE_TEXT)
+            (handler_input.response_builder
+                .speak(speech_text)
+                .set_card(SimpleCard(texts.SKILL_NAME, speech_text))
+                .ask(texts.TRUE_FALSE_TEXT))
         elif attr['state'] == utils.STATES['QUESTION_ANSWERED']:
             speech_text = '{}, {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
-            handler_input.response_builder.speak(
-                speech_text).ask(texts.NEW_ANSWER_TEXT)
+            (handler_input.response_builder
+                .speak(speech_text)
+                .set_card(SimpleCard(texts.SKILL_NAME, speech_text))
+                .ask(texts.NEW_ANSWER_TEXT))
         elif attr['state'] == utils.STATES['INITIALIZED']:
-            handler_input.response_builder.speak(texts.HELLO_TEXT).ask(texts.HELLO_REPROMPT_TEXT)
+            (handler_input.response_builder
+                .speak(texts.HELLO_TEXT)
+                .set_card(SimpleCard(texts.SKILL_NAME, texts.HELLO_TEXT))
+                .ask(texts.HELLO_REPROMPT_TEXT))
 
         return handler_input.response_builder.response
 
@@ -159,7 +178,10 @@ class StartOverIntentHandler(AbstractRequestHandler):
                                         utils.new_question_process(handler_input, texts),
                                         texts.TRUE_FALSE_TEXT)
 
-        handler_input.response_builder.speak(speech_text).ask(texts.TRUE_FALSE_TEXT)
+        (handler_input.response_builder
+            .speak(speech_text)
+            .set_card(SimpleCard(texts.SKILL_NAME, speech_text))
+            .ask(texts.TRUE_FALSE_TEXT))
 
         return handler_input.response_builder.response
 
@@ -173,10 +195,10 @@ class HelpIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         texts = utils.get_locale_texts(handler_input)
 
-        speech_text = texts.HELP_TEXT
-
-        handler_input.response_builder.speak(
-            speech_text)
+        (handler_input.response_builder
+            .speak(texts.HELP_TEXT)
+            .set_card(SimpleCard(texts.SKILL_NAME, texts.HELP_TEXT))
+            .ask(texts.HELLO_REPROMPT_TEXT))
 
         return handler_input.response_builder.response
 
@@ -203,9 +225,10 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         texts = utils.get_locale_texts(handler_input)
 
-        speech_text = texts.EXIT_TEXT
-
-        handler_input.response_builder.speak(speech_text).set_should_end_session(True)
+        (handler_input.response_builder
+            .speak(texts.EXIT_TEXT)
+            .set_card(SimpleCard(texts.SKILL_NAME, texts.EXIT_TEXT))
+            .set_should_end_session(True))
         
         return handler_input.response_builder.response
 
@@ -237,6 +260,7 @@ class SessionEndedRequestHandler(AbstractRequestHandler):
 
         logger.info('SessionEndedRequestHandler: Session end requested. handler_input:\n{}'.format(
             handler_input.request_envelope.request))
+
         return handler_input.response_builder.response
 
 
@@ -254,7 +278,10 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 
         texts = utils.get_locale_texts(handler_input)
 
-        handler_input.response_builder.speak(texts.EXCEPTION_TEXT)
+        (handler_input.response_builder
+            .speak(texts.EXCEPTION_TEXT)
+            .set_card(SimpleCard(texts.SKILL_NAME, texts.EXCEPTION_TEXT))
+            .ask(texts.EXCEPTION_REPROMPT_TEXT))
 
         return handler_input.response_builder.response
 
