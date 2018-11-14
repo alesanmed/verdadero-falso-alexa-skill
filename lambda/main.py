@@ -116,9 +116,9 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
         speech_text = ''
         
         if utils.check_correct_answer(question_obj, user_answer):
-            speech_text += texts.CORRECT_ANSWER_TEXT
+            speech_text = '{}. '.format(texts.CORRECT_ANSWER_TEXT)
         else:
-            speech_text += texts.INCORRECT_ANSWER_TEXT
+            speech_text = '{}. '.format(texts.INCORRECT_ANSWER_TEXT)
 
         speech_text += '{}. {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
 
@@ -174,9 +174,7 @@ class StartOverIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         texts = utils.get_locale_texts(handler_input)
 
-        speech_text = '{} {}, {}'.format(texts.START_OVER_TEXT,
-                                        utils.new_question_process(handler_input, texts),
-                                        texts.TRUE_FALSE_TEXT)
+        speech_text = '{} {}'.format(texts.START_OVER_TEXT, utils.new_question_process(handler_input, texts))
 
         (handler_input.response_builder
             .speak(speech_text)
