@@ -7,6 +7,7 @@ path.append(dir(path[0]))
 
 from pymongo import MongoClient
 from bson import ObjectId
+from connectors import db_utils
 from configurations import skill_config
 
 def retrieve_random_question(handler_input):
