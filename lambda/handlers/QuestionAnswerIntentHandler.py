@@ -5,9 +5,12 @@ from os.path import dirname as dir
 
 path.append(dir(path[0]))
 
+import random
+
 from ask_sdk_core.dispatch_components import AbstractRequestHandler
 from ask_sdk_core.utils import is_request_type, is_intent_name
 from ask_sdk_model.ui import SimpleCard
+
 from utils import locale_functions, misc_functions, question_functions, logger
 from utils.STATES import STATES
 from connectors import db_functions
@@ -46,9 +49,11 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
         speech_text = ''
         
         if question_functions.check_correct_answer(question_obj, user_answer):
-            speech_text = '{}. '.format(texts.CORRECT_ANSWER_TEXT)
+            speech_text = '<say-as interpret-as="interjection">{}</say-as>. '.format(
+                random.choice(texts.CORRECT_ANSWER_SPEECHCONS))
         else:
-            speech_text = '{}. '.format(texts.INCORRECT_ANSWER_TEXT)
+            speech_text = '<say-as interpret-as="interjection">{}</say-as>, no es correcto. '.format(
+                random.choice(texts.INCORRECT_ANSWER_SPEECHCONS))
 
         speech_text += '{}. {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
 
