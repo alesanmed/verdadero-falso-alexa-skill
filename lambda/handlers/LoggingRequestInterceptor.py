@@ -8,12 +8,9 @@ class LoggingRequestInterceptor(AbstractRequestInterceptor):
         attr = handler_input.attributes_manager.session_attributes
         intent_received = 'Unknown'
 
-        logger.get_logger().info('Request: {}'.format(handler_input.request_envelope))
-
         if handler_input.request_envelope.request.object_type == 'IntentRequest':
             intent_received = handler_input.request_envelope.request.intent.name
         else:
             intent_received = handler_input.request_envelope.request.object_type
 
-        logger.get_logger().info('Intent received: {}'.format(intent_received))
         logger.get_logger().info('User state: {}'.format(attr.get('state', None)))
