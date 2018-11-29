@@ -21,10 +21,7 @@ def parse_boolean_slot(slot_object):
       resolution_id = resolution.values[0].value.id
       break
 
-  if resolution_id != None:
-    resolution_id = resolution_id == 'True'
-
-  return resolution_id
+  return resolution_id == 'True'
 
 def initialize_attr(attr):
   if not attr.get('state', False):
