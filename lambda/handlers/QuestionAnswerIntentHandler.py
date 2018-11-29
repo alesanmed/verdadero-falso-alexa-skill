@@ -42,7 +42,7 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
 
         slots = handler_input.request_envelope.request.intent.slots
         
-        user_answer = misc_functions.parse_boolean_slot(slots.get("response").value)
+        user_answer = misc_functions.parse_boolean_slot(slots.get("response"))
 
         logger.get_logger().info('QuestionAnswerIntentHandler user answer: {}'.format(user_answer))
 
