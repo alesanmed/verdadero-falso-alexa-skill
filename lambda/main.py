@@ -15,8 +15,6 @@ logger.init_logger()
 
 sb = SkillBuilder()
 
-logger.get_logger().info('SkillBuilder created')
-
 base_path = os.path.join(os.path.dirname(__file__), 'handlers')
 files = os.listdir(base_path)
 
