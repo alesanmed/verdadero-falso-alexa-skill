@@ -21,7 +21,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
         is_cancel_or_stop_intent = (is_intent_name("AMAZON.CancelIntent")(handler_input) or 
                                     is_intent_name("AMAZON.StopIntent")(handler_input))
         
-        user_doesnt_want_another_question = (attr['state'] == STATES['QUESTION_ANSWERED'] and 
+        user_doesnt_want_another_question = (attr.get('state') == STATES['QUESTION_ANSWERED'] and 
                                             is_intent_name("AMAZON.NoIntent")(handler_input))
         
         return user_doesnt_want_another_question or is_cancel_or_stop_intent

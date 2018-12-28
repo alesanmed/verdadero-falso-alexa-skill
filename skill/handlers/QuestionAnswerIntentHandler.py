@@ -26,7 +26,7 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
         handler_input.attributes_manager.session_attributes = attr
 
         return (is_intent_name("QuestionAnswerIntent")(handler_input) and 
-                attr['state'] == STATES['QUESTION_ASKED'])
+                attr.get('state') == STATES['QUESTION_ASKED'])
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
