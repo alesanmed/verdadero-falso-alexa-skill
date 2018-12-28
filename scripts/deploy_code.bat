@@ -2,7 +2,9 @@ mkdir ..\upload\
 
 xcopy /s ..\skill\* ..\upload\
 
-pipenv lock -r > ../upload/requirements.txt
+call poetry export -f requirements.txt
+
+move ..\requirements.txt ..\upload\requirements.txt
 
 pip install -r ../upload/requirements.txt -t ../upload/
 
