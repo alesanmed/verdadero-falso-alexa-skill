@@ -51,15 +51,22 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
         if question_functions.check_correct_answer(question_obj, user_answer):
             speech_text = '<say-as interpret-as="interjection">{}</say-as>. '.format(
                 random.choice(texts.CORRECT_ANSWER_SPEECHCONS))
+            
+            speech_text_card = '{}. '.format(
+                random.choice(texts.CORRECT_ANSWER_SPEECHCONS))
         else:
             speech_text = '<say-as interpret-as="interjection">{}</say-as>, no es correcto. '.format(
                 random.choice(texts.INCORRECT_ANSWER_SPEECHCONS))
+            
+            speech_text_card = '{}, no es correcto. '.format(
+                random.choice(texts.INCORRECT_ANSWER_SPEECHCONS))
 
         speech_text += '{}. {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
+        speech_text_card += '{}. {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
 
         (handler_input.response_builder
                 .speak(speech_text)
-                .set_card(SimpleCard(texts.SKILL_NAME, speech_text))
+                .set_card(SimpleCard(texts.SKILL_NAME, speech_text_card))
                 .ask(texts.NEW_ANSWER_TEXT))
 
         return handler_input.response_builder.response
