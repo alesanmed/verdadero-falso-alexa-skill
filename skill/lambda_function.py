@@ -35,4 +35,4 @@ for file_name in files:
 
 logger.get_logger().info('Added all handlers to SkillBuilder')
 
-handler = sb.lambda_handler()
+lambda_handler = sb.lambda_handler()
