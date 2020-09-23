@@ -11,7 +11,7 @@ keywords = ['alexa-skill', 'q&a', 'questions', 'game']
 [tool.poetry.dependencies]
 python = "^3.6"
 ask-sdk = "^1.5"
-pymongo = "^3.7"
+pymongo = {version = "^3.11.0", extras = ["srv","tls"]}
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.2"
