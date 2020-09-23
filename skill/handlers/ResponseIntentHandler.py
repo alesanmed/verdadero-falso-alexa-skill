@@ -15,7 +15,7 @@ from utils import locale_functions, misc_functions, question_functions, logger
 from utils.STATES import STATES
 from connectors import db_functions
 
-class QuestionAnswerIntentHandler(AbstractRequestHandler):
+class ResponseIntentHandler(AbstractRequestHandler):
     """Handler for Answer Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
@@ -25,7 +25,8 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
 
         handler_input.attributes_manager.session_attributes = attr
 
-        return (is_intent_name("QuestionAnswerIntent")(handler_input) and 
+        return ((is_intent_name("ResponseIntent")(handler_input) or 
+                is_intent_name("ResponseOnlyIntent")(handler_input)) and 
                 attr.get('state') == STATES['QUESTION_ASKED'])
 
     def handle(self, handler_input):
@@ -44,7 +45,7 @@ class QuestionAnswerIntentHandler(AbstractRequestHandler):
         
         user_answer = misc_functions.parse_boolean_slot(slots.get("response"))
 
-        logger.get_logger().info('QuestionAnswerIntentHandler user answer: {}'.format(user_answer))
+        logger.get_logger().info('ResponseIntentHandler user answer: {}'.format(user_answer))
 
         speech_text = ''
         
