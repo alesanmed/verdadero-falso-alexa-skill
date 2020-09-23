@@ -62,8 +62,8 @@ class ResponseIntentHandler(AbstractRequestHandler):
             speech_text_card = '{}, no es correcto. '.format(
                 random.choice(texts.INCORRECT_ANSWER_SPEECHCONS))
 
-        speech_text += '{}. {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
-        speech_text_card += '{}. {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
+        speech_text += '{} {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
+        speech_text_card += '{} {}'.format(question_obj['more_info'], texts.NEW_ANSWER_TEXT)
 
         (handler_input.response_builder
                 .speak(speech_text)
