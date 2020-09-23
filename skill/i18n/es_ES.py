@@ -9,4 +9,4 @@ TRUE_FALSE_TEXT = '¿Verdadero o Falso?'
 CORRECT_ANSWER_SPEECHCONS = ['ajá', 'bien bien', 'bingo', 'bravo', 'chapó', 'cierto', 'ding', 'equilicuá', 'eureka', 'excelente', 'mil euros', 'perfecto', 'sí señor', 'voilà']
 INCORRECT_ANSWER_SPEECHCONS = ['cachis', 'diablos', 'jolín', 'leñe', 'nooo', 'oooh', 'qué pena', 'uups']
 NEW_ANSWER_TEXT = '¿Quieres otra pregunta?'
-START_OVER_TEXT = 'De acuerdo, empezamos de nuevo'
+START_OVER_TEXT = 'De acuerdo, empezamos de nuevo.'
