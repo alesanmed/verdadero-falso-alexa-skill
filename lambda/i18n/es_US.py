@@ -1,7 +1,7 @@
 from i18n import i18nTexts
 
 
-class es_MXTexts(i18nTexts):
+class es_USTexts(i18nTexts):
     SKILL_NAME = "Verdadero o Falso"
     HELP_TEXT = "Dime que te haga una pregunta y empezaré a preguntarte cosas"
     EXIT_TEXT = "Me lo he pasado muy bien, ¡Hasta la próxima!"
@@ -17,28 +17,31 @@ class es_MXTexts(i18nTexts):
     CORRECT_ANSWER_SPEECHCONS = [
         "ajá",
         "así mero",
+        "awesome",
         "bien",
+        "bravo",
         "chido",
-        "exaaactamente",
+        "chidísimo",
+        "exactamente",
         "fabuloso",
         "fantástico",
         "fenomenal",
-        "padrísimo",
-        "perfectísimo",
-        "perfecto",
-        "súper",
+        "great",
+        "touchdown",
+        "well done",
+        "yay",
     ]
     INCORRECT_ANSWER_SPEECHCONS = [
-        "cachis",
+        "bummer",
         "diablos",
         "lástima",
         "lo lamento",
         "lo siento",
         "maldición",
         "maldita sea",
-        "nooo",
-        "oooh",
-        "por poquito",
+        "no",
+        "oops",
+        "ouch",
     ]
     NEW_ANSWER_TEXT = "¿Quieres otra pregunta?"
     START_OVER_TEXT = "De acuerdo, empezamos de nuevo."
