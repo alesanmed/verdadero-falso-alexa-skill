@@ -9,13 +9,17 @@ repository = "https://github.com/alesanmed/verdadero-falso-alexa-skill"
 keywords = ['alexa-skill', 'q&a', 'questions', 'game']
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "3.9.14"
 ask-sdk = "^1.5"
-pymongo = "^3.7"
+pymongo = {version = "^3.11.0", extras = ["srv","tls"]}
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pylint = "^2.2"
-autopep8 = "^1.4"
+black = "^22.10.0"
+isort = "^5.10.1"
+flake8 = "^6.0.0"
+bandit = "^1.7.4"
+ask-sdk-local-debug = "^1.1.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
