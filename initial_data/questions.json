@@ -37,12 +37,12 @@
     "incorrect_answers": [
       "True"
     ],
-		"more_info": "El desfibrilador permite corregir algunos tipos de arritmia que pueden causar una parada, pero ante un corazón parado el desfibrilador no sirve"
+    "more_info": "El desfibrilador permite corregir algunos tipos de arritmia que pueden causar una parada, pero ante un corazón parado el desfibrilador no sirve"
   },
   {
     "category": {
       "father": "Ocio",
-			"child": "Literatura"
+      "child": "Literatura"
     },
     "type": "boolean",
     "difficulty": "facil",
@@ -51,12 +51,12 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "Fue escrita por George Orwell y es una novela de ficción distópica."
+    "more_info": "Fue escrita por George Orwell y es una novela de ficción distópica."
   },
   {
     "category": {
       "father": "Ciencia y Tecnología",
-			"child": "Matemáticas"
+      "child": "Matemáticas"
     },
     "type": "boolean",
     "difficulty": "facil",
@@ -65,7 +65,7 @@
     "incorrect_answers": [
       "True"
     ],
-		"more_info": "Este problema busca encontrar, usando solo una regla y un compás, un cuadrado con un área igual a un círculo dado. No tiene solución."
+    "more_info": "Este problema busca encontrar, usando solo una regla y un compás, un cuadrado con un área igual a un círculo dado. No tiene solución."
   },
   {
     "category": {
@@ -78,12 +78,12 @@
     "incorrect_answers": [
       "True"
     ],
-		"more_info": "La capital de Suecia es Estocolmo"
+    "more_info": "La capital de Suecia es Estocolmo"
   },
   {
     "category": {
       "father": "Ciencia y Tecnología",
-			"child": "Biología"
+      "child": "Biología"
     },
     "type": "boolean",
     "difficulty": "facil",
@@ -92,7 +92,7 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "El núcleo está formado de protones y neutrones"
+    "more_info": "El núcleo está formado de protones y neutrones"
   },
   {
     "category": {
@@ -105,12 +105,12 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "Hay afirmaciones acerca de que se queman entre 1,5 y 2 calorías por minuto mientras se besa a una persona"
+    "more_info": "Hay afirmaciones acerca de que se queman entre 1,5 y 2 calorías por minuto mientras se besa a una persona"
   },
   {
     "category": {
       "father": "Ocio",
-			"child": "Cine"
+      "child": "Cine"
     },
     "type": "boolean",
     "difficulty": "facil",
@@ -119,7 +119,7 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "En alguna entrevista ha dicho que tenía el acrónimo de esa frase en inglés (BMF) grabado en el interruptor de su sable"
+    "more_info": "En alguna entrevista ha dicho que tenía el acrónimo de esa frase en inglés (BMF) grabado en el interruptor de su sable"
   },
   {
     "category": {
@@ -132,7 +132,7 @@
     "incorrect_answers": [
       "True"
     ],
-		"more_info": "En Europa hay varios desiertos, por ejemplo el de Accona en Italia o el de Monegros o Tabernas en España."
+    "more_info": "En Europa hay varios desiertos, por ejemplo el de Accona en Italia o el de Monegros o Tabernas en España."
   },
   {
     "category": {
@@ -145,7 +145,7 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "Los polares son los desiertos más grandes del mundo. El de la Antártida con más de 14 millones de kilómetros cuadrados. Sin contar los polares, el más grande es el del Sáhara"
+    "more_info": "Los polares son los desiertos más grandes del mundo. El de la Antártida con más de 14 millones de kilómetros cuadrados. Sin contar los polares, el más grande es el del Sáhara"
   },
   {
     "category": {
@@ -158,7 +158,7 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "El idioma rumano proviene de una rama indoeuropea de lenguas que evolucionaron del latín popular, como el resto de lenguas romances."
+    "more_info": "El idioma rumano proviene de una rama indoeuropea de lenguas que evolucionaron del latín popular, como el resto de lenguas romances."
   },
   {
     "category": {
@@ -171,12 +171,12 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "Anna Frank el 12 de junio y MArtein Luther King hijo el 15 de enero, pero ambos en el 1929."
+    "more_info": "Anna Frank el 12 de junio y MArtein Luther King hijo el 15 de enero, pero ambos en el 1929."
   },
   {
     "category": {
       "father": "Ocio",
-			"child": "Literatura"
+      "child": "Literatura"
     },
     "type": "boolean",
     "difficulty": "dificil",
@@ -185,12 +185,12 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "Haciendo algunos cálculos con afirmaciones del primer libro se puede llegar a que esa es su fecha de nacimiento."
+    "more_info": "Haciendo algunos cálculos con afirmaciones del primer libro se puede llegar a que esa es su fecha de nacimiento."
   },
   {
     "category": {
       "father": "Ciencia y Tecnología",
-			"child": "Biología"
+      "child": "Biología"
     },
     "type": "boolean",
     "difficulty": "dificil",
@@ -199,7 +199,7 @@
     "incorrect_answers": [
       "True"
     ],
-		"more_info": "Aparentemente se llama así popr la palabra lithos que en griego significa piedra. Esto se deba probablemente a que el elemento fue descubierto a pArteir de una fuente mineral"
+    "more_info": "Aparentemente se llama así popr la palabra lithos que en griego significa piedra. Esto se deba probablemente a que el elemento fue descubierto a pArteir de una fuente mineral"
   },
   {
     "category": {
@@ -212,7 +212,7 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "Además nació en marzo de 1986 en Nueva York"
+    "more_info": "Además nació en marzo de 1986 en Nueva York"
   },
   {
     "category": {
@@ -225,7 +225,7 @@
     "incorrect_answers": [
       "True"
     ],
-		"more_info": "Además fue pintado por Leonardo entre el 1503 y el 1519"
+    "more_info": "Además fue pintado por Leonardo entre el 1503 y el 1519"
   },
   {
     "category": {
@@ -238,7 +238,7 @@
     "incorrect_answers": [
       "False"
     ],
-		"more_info": "Fue Carlos Quinto de Escocia y Primero de Inglaterra el que en 1620 mandó una tropa de escoceses para fundar allí una colonia con el nombre Nueva Escocia"
+    "more_info": "Fue Carlos Quinto de Escocia y Primero de Inglaterra el que en 1620 mandó una tropa de escoceses para fundar allí una colonia con el nombre Nueva Escocia"
   },
   {
     "category": {
@@ -252,6 +252,1042 @@
     "incorrect_answers": [
       "True"
     ],
-		"more_info": "Los monos están tan evolucionados como los humanos, la diferencia es que del antepasado común de monos y humanos surgieron líneas evolutivas separadas que dieron lugar a especies diferentes"
+    "more_info": "Los monos están tan evolucionados como los humanos, la diferencia es que del antepasado común de monos y humanos surgieron líneas evolutivas separadas que dieron lugar a especies diferentes"
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Física"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La luz es una onda electromagnética.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La luz es una forma de energía electromagnética que se propaga a través del espacio en forma de ondas."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Física"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La luz se propaga en línea recta.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La luz se propaga en línea recta a menos que sea desviada por un cuerpo o un medio que tenga propiedades ópticas diferentes al espacio vacío."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Física"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La velocidad de la luz en el vacío es constante.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La velocidad de la luz en el vacío es una de las constantes más importantes en la física y tiene un valor de aproximadamente 299,792,458 metros por segundo."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Física"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La luz visible representa un pequeño rango del espectro electromagnético.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El espectro electromagnético es un continuo de longitudes de onda y frecuencias que va desde las ondas de radio hasta los rayos gamma."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Física"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La luz es una partícula llamada fotón.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La luz se comporta tanto como una onda electromagnética como como una partícula llamada fotón."
+  },
+  {
+    "category": {
+      "father": "Geografía",
+      "child": "Continentes"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El continente más grande del mundo es Asia.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Asia es el continente más grande del mundo en términos de superficie y población. Se extiende desde el continente europeo hasta el océano Pacífico y abarca una gran variedad de paisajes y culturas."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Astronomía"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La estrella más cercana a la Tierra es el Sol.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El Sol es la estrella más cercana a la Tierra y es la fuente principal de luz y calor para nuestro planeta. Aunque hay otras estrellas más cercanas en términos absolutos, el Sol es la que está más cerca de nosotros en términos relativos."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Química"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El oxígeno es un elemento químico con símbolo O y número atómico 8.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El oxígeno es un elemento químico con el símbolo O y número atómico 8. Es un componente esencial de la vida en la Tierra ya que es necesario para la respiración de la mayoría de los seres vivos."
+  },
+  {
+    "category": {
+      "father": "Historia",
+      "child": "Siglo XX"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La Primera Guerra Mundial comenzó en 1914 y duró hasta 1918.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La Primera Guerra Mundial fue un conflicto armado que se desarrolló principalmente en Europa y que involucró a la mayoría de las principales potencias del mundo. Comenzó en 1914 y duró hasta 1918."
+  },
+  {
+    "category": {
+      "father": "Geografía",
+      "child": "Continentes"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El continente más grande del mundo es América.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "El continente más grande del mundo en términos de superficie y población es Asia. América es el tercer continente más grande después de Asia y África."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Astronomía"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La estrella más cercana a la Tierra es Alpha Centauri.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Aunque Alpha Centauri es un sistema estelar que se encuentra cerca de nuestro sistema solar, la estrella más cercana a la Tierra es el Sol. Alpha Centauri está a unos 4,37 años luz de distancia, mientras que el Sol está a solo 8 minutos luz de distancia."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Química"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El nitrógeno es un elemento químico con símbolo N y número atómico 7.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El nitrógeno es un elemento químico con el símbolo N y número atómico 7. Es un gas a temperatura y presión normales y es un componente esencial de los aminoácidos, que son la base de las proteínas en la mayoría de los seres vivos."
+  },
+  {
+    "category": {
+      "father": "Historia",
+      "child": "Siglo XX"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La Segunda Guerra Mundial comenzó en 1939 y duró hasta 1945.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La Segunda Guerra Mundial fue un conflicto armado que se desarrolló principalmente en Europa y Asia y que involucró a la mayoría de las principales potencias del mundo. Comenzó en 1939 con el ataque a Polonia por parte de Alemania y duró hasta 1945."
+  },
+  {
+    "category": {
+      "father": "Geografía",
+      "child": "Continentes"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El continente más pequeño del mundo es Oceanía.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Oceanía es el continente más pequeño en términos de superficie y población, pero no es el más pequeño del mundo. Ese honor pertenece a Europa."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Física"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La velocidad de la luz es constante en todas las direcciones.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La velocidad de la luz es constante en el vacío, pero puede cambiar cuando se propaga a través de un medio, como el agua o el vidrio."
+  },
+  {
+    "category": {
+      "father": "Historia",
+      "child": "Siglo XX"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La Segunda Guerra Mundial comenzó en 1941 y duró hasta 1945.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La Segunda Guerra Mundial comenzó en 1939 con el ataque a Polonia por parte de Alemania y duró hasta 1945 con la rendición incondicional de Japón y Alemania."
+  },
+  {
+    "category": {
+      "father": "Geografía",
+      "child": "Países"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "China es el país más pequeño del mundo en términos de superficie.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "China es uno de los países más grandes del mundo en términos de superficie y población. El país más pequeño del mundo en términos de superficie es el Vaticano."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Química"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El hierro es un elemento químico con símbolo Fe y número atómico 11.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "El hierro es un elemento químico con el símbolo Fe y número atómico 26. Es un metal conocido por su resistencia y por ser un componente esencial en la producción de acero."
+  },
+  {
+    "category": {
+      "father": "Geografía",
+      "child": "Países"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "China es el país más poblado del mundo.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "China tiene la población más grande del mundo con más de 1.400 millones de personas."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Física"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El aire que respiramos está compuesto principalmente de oxígeno.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El aire que respiramos está compuesto principalmente de oxígeno (un 20,9%) y nitrógeno (un 78,1%)."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El corazón humano es un músculo.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El corazón humano es un músculo vital que bombea la sangre a través del cuerpo."
+  },
+  {
+    "category": {
+      "father": "Historia",
+      "child": "Siglo XX"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El 11 de septiembre de 2001 fue el día en que se produjeron los ataques terroristas a las Torres Gemelas en Nueva York.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El 11 de septiembre de 2001 fue el día en que se produjeron los ataques terroristas a las Torres Gemelas en Nueva York, lo que causó la muerte de miles de personas y provocó una serie de eventos en todo el mundo."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Videojuegos"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Super Mario Bros es un videojuego de plataformas desarrollado por Nintendo.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Super Mario Bros es uno de los videojuegos más populares de la historia y fue desarrollado por Nintendo."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Cine"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Avengers: Endgame es la película más taquillera de la historia.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Avengers: Endgame es la película más taquillera de la historia con unos ingresos de 2.798 millones de dólares en todo el mundo."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Música"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La canción más reproducida de Spotify es 'Shape of You' de Ed Sheeran.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La canción más reproducida de Spotify es 'Shape of You' de Ed Sheeran con más de 2.500 millones de reproducciones."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Televisión"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "Game of Thrones es una serie de televisión producida por HBO.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Game of Thrones es una serie de televisión producida por HBO y basada en la serie de libros 'Canción de hielo y fuego' de George R. R. Martin."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Videojuegos"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Super Mario Bros fue desarrollado por Microsoft.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Super Mario Bros fue desarrollado por Nintendo, no por Microsoft."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Cine"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La película más taquillera de la historia es Titanic.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Avengers: Endgame es la película más taquillera de la historia, no Titanic."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Música"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La canción más reproducida de Spotify es 'Baby Shark' de Pinkfong.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La canción más reproducida de Spotify es 'Shape of You' de Ed Sheeran, no 'Baby Shark' de Pinkfong."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Videojuegos"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Super Mario Bros fue el primer videojuego en utilizar sprites de personajes.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Super Mario Bros fue el primer videojuego en utilizar sprites de personajes, lo que le permitió crear movimientos más fluidos en la pantalla."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Cine"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Avengers: Endgame es la continuación de Avengers: Infinity War.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Avengers: Endgame es la continuación de Avengers: Infinity War y concluye la historia de los Vengadores."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Música"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "Ed Sheeran es un cantante y compositor británico.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Ed Sheeran es un cantante y compositor británico conocido por éxitos como 'Shape of You' y 'Thinking Out Loud'."
+  },
+  {
+    "category": {
+      "father": "Entretenimiento",
+      "child": "Televisión"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "Game of Thrones es una serie de televisión basada en libros.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Game of Thrones es una serie de televisión producida por HBO y basada en la serie de libros 'Canción de hielo y fuego' de George R. R. Martin."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El cerebro humano es el órgano más grande del cuerpo.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "El cerebro humano no es el órgano más grande del cuerpo, ese honor pertenece al hígado."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "Los huesos del cuerpo humano son blancos.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Los huesos del cuerpo humano no son blancos, tienen un color amarillo pálido debido a la presencia de pigmentos y proteínas."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El sistema digestivo humano es el encargado de descomponer los alimentos en nutrientes que el cuerpo pueda utilizar.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El sistema digestivo humano es el encargado de descomponer los alimentos en nutrientes que el cuerpo pueda utilizar y eliminar los desechos del cuerpo."
+  },
+  {
+    "category": {
+      "father": "Ciencia",
+      "child": "Biología"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El sistema circulatorio humano está formado por el corazón, los vasos sanguíneos y la sangre.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El sistema circulatorio humano está formado por el corazón, los vasos sanguíneos y la sangre y se encarga de transportar oxígeno a los órganos."
+  },
+  {
+    "category": {
+      "father": "Arte",
+      "child": "Pintura"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La Mona Lisa es una pintura del artista español Pablo Picasso.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La Mona Lisa es una pintura del artista italiano Leonardo da Vinci, no de Pablo Picasso."
+  },
+  {
+    "category": {
+      "father": "Arte",
+      "child": "Pintura"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El Guernica es una pintura de Salvador Dalí.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "El Guernica es una pintura del artista español Pablo Picasso, no de Salvador Dalí."
+  },
+  {
+    "category": {
+      "father": "Arte",
+      "child": "Música"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El Requiem es una obra de música clásica compuesta por Wolfgang Amadeus Mozart.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El Requiem es una obra de música clásica compuesta por Wolfgang Amadeus Mozart y se considera una de sus obras maestras."
+  },
+  {
+    "category": {
+      "father": "Arte",
+      "child": "Música"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La ópera La flauta mágica es una obra de Giuseppe Verdi.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La ópera La flauta mágica es una obra de Wolfgang Amadeus Mozart, no de Giuseppe Verdi."
+  },
+  {
+    "category": {
+      "father": "Arte",
+      "child": "Literatura"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El Quijote es una obra de teatro escrita por Miguel de Cervantes.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "El Quijote es una novela escrita por Miguel de Cervantes y publicada por primera vez en 1605"
+  },
+  {
+    "category": {
+      "father": "Historia",
+      "child": "Antigua"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La Torre de Babel es una estructura arquitectónica de la antigua Babilonia.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La Torre de Babel es una estructura arquitectónica de la antigua Babilonia, cuya construcción se describe en la Biblia."
+  },
+  {
+    "category": {
+      "father": "Historia",
+      "child": "Antigua"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El Imperio Romano fue gobernado por los egipcios.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "El Imperio Romano fue gobernado por los romanos, no por los egipcios."
+  },
+  {
+    "category": {
+      "father": "Historia",
+      "child": "Medieval"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La Guerra de los Cien Años fue un conflicto militar entre Inglaterra y Francia en el siglo XV.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La Guerra de los Cien Años fue un conflicto militar entre Inglaterra y Francia que tuvo lugar entre 1337 y 1453."
+  },
+  {
+    "category": {
+      "father": "Historia",
+      "child": "Medieval"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La Conquista de México fue una expedición militar liderada por Hernán Cortés en el siglo XVI.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La Conquista de México fue una expedición militar liderada por Hernán Cortés en el siglo XVI en la que se logró la conquista del Imperio Azteca."
+  },
+  {
+    "category": {
+      "father": "Tecnología",
+      "child": "Informática"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El primer ordenador fue creado en el año 1900.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "El primer ordenador fue creado en el año 1936, no en 1900."
+  },
+  {
+    "category": {
+      "father": "Tecnología",
+      "child": "Informática"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La memoria RAM almacena información permanentemente.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La memoria RAM (Random Access Memory) no almacena información permanentemente, sólo mientras el ordenador está encendido."
+  },
+  {
+    "category": {
+      "father": "Tecnología",
+      "child": "Telecomunicaciones"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El primer teléfono fue inventado por Alexander Graham Bell en 1876.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El primer teléfono fue inventado por Alexander Graham Bell en 1876 y patentado el 7 de marzo de ese mismo año"
+  },
+  {
+    "category": {
+      "father": "Espectáculos",
+      "child": "Cine"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El actor estadounidense Tom Cruise es conocido por interpretar a James Bond en la saga cinematográfica del agente secreto británico.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Tom Cruise no ha interpretado a James Bond en la saga cinematográfica del agente secreto británico, ese papel ha sido interpretado por varios actores a lo largo de la historia de la franquicia."
+  },
+  {
+    "category": {
+      "father": "Espectáculos",
+      "child": "Cine"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El actor estadounidense Johnny Depp es conocido por interpretar al personaje de Batman en la saga cinematográfica del Caballero de la Noche.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Johnny Depp no ha interpretado al personaje de Batman en la saga cinematográfica del Caballero de la Noche, ese papel ha sido interpretado por varios actores a lo largo de la historia de la franquicia."
+  },
+  {
+    "category": {
+      "father": "Espectáculos",
+      "child": "Televisión"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La serie de televisión Juego de Tronos fue creada por los hermanos Duffer.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La serie de televisión Juego de Tronos fue creada por David Benioff y D.B. Weiss, no por los hermanos Duffer."
+  },
+  {
+    "category": {
+      "father": "Espectáculos",
+      "child": "Cine"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El actor estadounidense Tom Hanks es conocido por interpretar al personaje de Spiderman en la saga cinematográfica del superheroe de Marvel Comics.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Tom Hanks no ha interpretado al personaje de Spiderman en la saga cinematográfica del superheroe de Marvel Comics, ese papel ha sido interpretado por varios actores a lo largo de la historia de la franquicia."
+  },
+  {
+    "category": {
+      "father": "Espectáculos",
+      "child": "Cine"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El actor estadounidense Will Smith es conocido por interpretar al personaje de Ironman en la saga cinematográfica del superheroe de Marvel Comics.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Will Smith no ha interpretado al personaje de Ironman en la saga cinematográfica del superheroe de Marvel Comics, ese papel ha sido interpretado por varios actores a lo largo de la historia de la franquicia."
+  },
+  {
+    "category": {
+      "father": "Espectáculos",
+      "child": "Televisión"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La serie de televisión Stranger Things fue creada por los hermanos Duffer.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "La serie de televisión Stranger Things fue creada por los hermanos Duffer, Matt y Ross Duffer."
+  },
+  {
+    "category": {
+      "father": "Filosofía",
+      "child": "Política"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El filósofo alemán Friedrich Nietzsche es conocido por sus teorías sobre la democracia y el liberalismo.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Aunque Nietzsche fue un filósofo muy influyente, sus teorías no se centran en la democracia y el liberalismo, sino en temas como la voluntad de poder y la crítica a la moral tradicional."
+  },
+  {
+    "category": {
+      "father": "Filosofía",
+      "child": "Política"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El filósofo francés Jean-Jacques Rousseau es conocido por sus teorías sobre la sociedad de contrato y el Estado de derecho.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Jean-Jacques Rousseau fue un filósofo francés cuyas teorías se centran en la sociedad de contrato y el Estado de derecho, entre otros temas."
+  },
+  {
+    "category": {
+      "father": "Filosofía",
+      "child": "Ética"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El filósofo alemán Immanuel Kant es conocido por sus teorías sobre la moral y el deber.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Immanuel Kant fue un filósofo alemán cuyas teorías se centran en la moral y el deber, entre otros temas."
+  },
+  {
+    "category": {
+      "father": "Deportes",
+      "child": "Fútbol"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El futbolista portugués Cristiano Ronaldo es conocido por jugar en la selección de fútbol de España.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Cristiano Ronaldo es un futbolista portugués que juega en la selección de fútbol de Portugal, no de España."
+  },
+  {
+    "category": {
+      "father": "Deportes",
+      "child": "Fútbol"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "El futbolista español Lionel Messi es conocido por jugar en la selección de fútbol de Brasil.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Lionel Messi es un futbolista español que juega en la selección de fútbol de Argentina, no de Brasil."
+  },
+  {
+    "category": {
+      "father": "Deportes",
+      "child": "Baloncesto"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El jugador de baloncesto estadounidense LeBron James es conocido por jugar en la NBA para el equipo Los Angeles Lakers.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "LeBron James es un jugador de baloncesto estadounidense que actualmente juega en la NBA para el equipo Los Angeles Lakers."
+  },
+  {
+    "category": {
+      "father": "Deportes",
+      "child": "Baloncesto"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El jugador de baloncesto español Pau Gasol es conocido por jugar en la NBA para el equipo Boston Celtics.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Pau Gasol es un jugador de baloncesto español que ha jugado en la NBA para varios equipos, pero nunca en los Boston Celtics"
+  },
+  {
+    "category": {
+      "father": "Literatura",
+      "child": "Novela"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La novela Don Quijote de la Mancha fue escrita por el escritor español Miguel de Cervantes.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Don Quijote de la Mancha es una novela escrita por el escritor español Miguel de Cervantes."
+  },
+  {
+    "category": {
+      "father": "Literatura",
+      "child": "Novela"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La novela Moby Dick fue escrita por el escritor estadounidense Ernest Hemingway.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Moby Dick es una novela escrita por el escritor estadounidense Herman Melville, no por Ernest Hemingway."
+  },
+  {
+    "category": {
+      "father": "Literatura",
+      "child": "Poesía"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El poema 'El Cid' fue escrito por el poeta español Federico García Lorca.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "El poema 'El Cid' fue escrito por el poeta español Antonio Machado, no por Federico García Lorca."
+  },
+  {
+    "category": {
+      "father": "Literatura",
+      "child": "Poesía"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "El poema 'A un general' fue escrito por el poeta español Pablo Neruda.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "El poema 'A un general' fue escrito por el poeta chileno Pablo Neruda."
+  },
+  {
+    "category": {
+      "father": "Literatura",
+      "child": "Teatro"
+    },
+    "type": "boolean",
+    "difficulty": "dificil",
+    "question": "La obra teatral 'Hamlet' fue escrita por el dramaturgo español Pedro Calderón de la Barca.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La obra teatral 'Hamlet' fue escrita por el dramaturgo inglés William Shakespeare, no por Pedro Calderón de la Barca."
+  },
+  {
+    "category": {
+      "father": "Música",
+      "child": "Rock"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La banda de rock Led Zeppelin es originaria de Estados Unidos.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La banda de rock Led Zeppelin es originaria del Reino Unido, no de Estados Unidos."
+  },
+  {
+    "category": {
+      "father": "Música",
+      "child": "Rock"
+    },
+    "type": "boolean",
+    "difficulty": "facil",
+    "question": "La banda de rock The Beatles es originaria de España.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "La banda de rock The Beatles es originaria del Reino Unido, no de España."
+  },
+  {
+    "category": {
+      "father": "Música",
+      "child": "Pop"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La cantante estadounidense Lady Gaga es conocida por sus apariencias extravagantes y su música electrónica.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Lady Gaga es una cantante estadounidense conocida por su música pop y sus apariencias extravagantes."
+  },
+  {
+    "category": {
+      "father": "Música",
+      "child": "Pop"
+    },
+    "type": "boolean",
+    "difficulty": "medio",
+    "question": "La cantante estadounidense Taylor Swift es conocida por su música pop y sus letras profundas y emotivas.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Taylor Swift es una cantante estadounidense conocida por su música pop y sus letras profundas y emotivas."
+  },
+  {
+    "category": {
+      "father": "Música",
+      "child": "Jazz"
+    },
+    "type": "boolean",
+    "difficulty": "dificil",
+    "question": "El saxofonista estadounidense John Coltrane es conocido por su trabajo en el jazz fusion.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "John Coltrane es un saxofonista estadounidense conocido por su trabajo en el jazz modal y el jazz post-bop, no en el jazz fusion."
+  },
+  {
+    "category": {
+      "father": "Música",
+      "child": "Jazz"
+    },
+    "type": "boolean",
+    "difficulty": "dificil",
+    "question": "El pianista estadounidense Thelonious Monk es conocido por su trabajo en el jazz fusion.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ],
+    "more_info": "Thelonious Monk es un pianista estadounidense conocido por su trabajo en el bebop y el hard bop, no en el jazz fusion."
+  },
+  {
+    "category": {
+      "father": "Música",
+      "child": "Clásica"
+    },
+    "type": "boolean",
+    "difficulty": "dificil",
+    "question": "El compositor alemán Ludwig van Beethoven es conocido por sus obras para piano y violín.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ],
+    "more_info": "Algunas de sus obras más conocidas son la quinta sinfonía o la tercera (sinfonía heróica)."
   }
 ]

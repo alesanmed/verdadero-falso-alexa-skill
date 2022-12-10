@@ -95,7 +95,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:eu-west-1:560643236777:function:50c81520-4c67-4ac0-bf16-d4f9396577de:Release_1"
+          "uri": "arn:aws:lambda:us-east-1:972852389401:function:ask-VerdaderooFalso-default-ski-AlexaSkillFunction-2Ie9XjmEgOhP"
         },
         "interfaces": [],
         "regions": {
