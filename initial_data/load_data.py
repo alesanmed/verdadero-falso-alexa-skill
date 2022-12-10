@@ -1,40 +1,40 @@
 # encoding: utf-8
-from sys import path
-import os
-from os.path import dirname as dir
-
-path.append(dir(path[0]))
+import json
+import urllib.parse
 
 from pymongo import MongoClient
-from configurations import skill_config
-import urllib
-import json
 
-def connect():
+from initial_data.configurations import skill_config
+
+
+def connect() -> MongoClient:
     username = urllib.parse.quote_plus(skill_config.DB_USER)
     password = urllib.parse.quote_plus(skill_config.DB_PASS)
-    db_ip = urllib.parse.quote_plus(skill_config.DB_IP)
-    db_port = urllib.parse.quote_plus(skill_config.DB_PORT)
+    db_url = urllib.parse.quote_plus(skill_config.DB_URL)
     db_name = urllib.parse.quote_plus(skill_config.DB_NAME)
 
-    client = MongoClient('mongodb://%s:%s@%s:%s/%s' % 
-                        (username, password, db_ip, db_port, db_name))
+    client = MongoClient(
+        f"mongodb+srv://{username}:{password}@{db_url}/{db_name}?retryWrites=true&w=majority"
+    )
 
     return client
 
-def close(client):
+
+def close(client: MongoClient):
     client.close()
+
 
 def load_data():
     client = connect()
 
-    db = client[skill_config.DB_NAME]
-    
-    questions = json.load(open('questions.json', 'r', encoding='utf-8'))
+    db = client.get_database(skill_config.DB_NAME)
+
+    questions = json.load(open("questions.json", "r", encoding="utf-8"))
 
     db.questions.insert_many(questions)
 
     close(client)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     load_data()

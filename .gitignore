@@ -104,3 +104,7 @@ venv.bak/
 .mypy_cache/
 
 .vscode
+
+ask-resources.json
+.ask
+lambda/node_modules
